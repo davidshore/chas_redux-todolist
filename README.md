@@ -42,7 +42,7 @@ Skapa en mapp `src/store` med följande filer:
 
 ## Steg 3 – Reducer
 
-En reducer är en funktion som uppdaterar state. Som input får den en sträng med dess namn (type) och data som den behöver (payload). Till exempel:
+En reducer är en funktion som uppdaterar state. Som input får den en action: En sträng med dess namn (type) och data som den behöver (payload), tillsammans med state (i det här fallet en todo-lista). En action kan vara till exempel:
 `{type: "ADD_TODO", payload: "städa"}`.
 Med hjälp av detta uppdateras todo-listan med en ny todo.
 
